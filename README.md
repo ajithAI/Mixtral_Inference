@@ -56,7 +56,7 @@ python3 -c "import tensorrt_llm"  # < Prints TRT Version >
 ```
 apt-get install git-lfs 
 git lfs install 
-git clone https://huggingface.co/mistralai/Mixtral-8x7B-v0.1 /home/user
+git clone https://huggingface.co/mistralai/Mixtral-8x7B-v0.1 /home/user/Mixtral-8x7B-v0.1
 ```
 
 ### 7. Run Quantization & Create Checkpoint :
