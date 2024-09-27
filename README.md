@@ -4,7 +4,8 @@
 > Install Docker & Nvidia Docker. Follow [Link](https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/install-guide.html) </br>
 > Make sure all 8 GPUs are visible. </br>
 > Check GPUs status with Command : `nvidia-smi`
-</br>
+
+
 #### 2. Setup TRT-LLM Docker Container : 
 
 ###### Replace this with your Work Space Path. Minimum Disk Space Required : 300GB
