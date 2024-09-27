@@ -30,7 +30,7 @@ pip3 install numpy==1.26.4
 ```
 ### 4. Install TRT-LLM : 
 
-**UNTAR the ZIP folder to ```/home/user/Mixtral_Inference```**
+**Unzip the "Mixtral_Inference.zip" folder to ```/home/user/Mixtral_Inference```**
 ```
 cd /home/user/Mixtral_Inference
 git clone --recursive https://github.com/NVIDIA/TensorRT-LLM.git
