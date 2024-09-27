@@ -62,7 +62,7 @@ git clone https://huggingface.co/mistralai/Mixtral-8x7B-v0.1
 export DIR=/home/user/Mixtral_Inference && cd $DIR && mkdir $DIR/Checkpoints
 ```
 ```
-cd TensorRT-LLM
+cd TensorRT-LLM/examples
 python3 quantization/quantize.py --model_dir /home/user/Mixtral-8x7B-v0.1 --dtype float16 \
       --qformat fp8 --kv_cache_dtype fp8 --calib_size 512 --tp_size 8 \
       --output_dir $DIR/Checkpoints/Mixtral_8x7B_v0.1_Checkpoint_FP8_8xGPU_CUDA_12.6_TRT_LLM_0.13
