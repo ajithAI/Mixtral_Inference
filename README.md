@@ -89,8 +89,8 @@ export DIR=/home/user/Mixtral_Inference && cd $DIR && mkdir ${DIR}/MIXTRAL_BM_LO
 BATCH=64
 ILEN=2048
 OLEN=2048
-WARM=5
-ITER=25
+WARM=2
+ITER=2
 ```
 ```
 mpirun -n 8 --allow-run-as-root --bind-to numa --rank-by hwthread --report-bindings python3 ${DIR}/TensorRT-LLM/examples/run_bm.py \ 
