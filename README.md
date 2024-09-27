@@ -53,7 +53,7 @@ python3 -c "import tensorrt_llm"  # < Prints TRT Version >
 ```
 
 ### 6. Download Mixtral 8x7B Model from HuggingFace : 
-
+###### Use Huggingface Login Credentials to download the Mixtral Model.
 ```
 apt-get install git-lfs 
 git lfs install 
