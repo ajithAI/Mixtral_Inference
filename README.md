@@ -29,8 +29,9 @@ apt-get update && apt-get -y install python3.10 python3-pip openmpi-bin libopenm
 pip3 install numpy==1.26.4
 ```
 ### 4. Install TRT-LLM : 
-```
+
 **UNTAR THE ZIP FOLDER TO /home/user/Mixtral_Inference**
+```
 cd /home/user/Mixtral_Inference
 git clone --recursive https://github.com/NVIDIA/TensorRT-LLM.git
 pip install typing-extensions
