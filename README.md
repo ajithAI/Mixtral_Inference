@@ -14,7 +14,7 @@
 export HOSTSPACE="/mnt/Scratch_space"  
 ```
 ```
-sudo docker run --runtime=nvidia --name=TensorRT_LLM_8xGPU_CUDA_12.6.0_TRT_LLM_TRY --gpus=all --entrypoint /bin/bash \
+sudo docker run --runtime=nvidia --name=TensorRT_LLM_8xGPU_CUDA_12.6.0 --gpus=all --entrypoint /bin/bash \
                 --net=host --ipc=host --ulimit memlock=-1 --ulimit stack=67108864 --cap-add=SYS_PTRACE \
                 --cap-add=SYS_ADMIN --cap-add=DAC_READ_SEARCH --security-opt seccomp=unconfined -it \
                 -v ${HOSTSPACE}:/home/user -w /home/user nvidia/cuda:12.6.0-cudnn-devel-ubuntu22.04
