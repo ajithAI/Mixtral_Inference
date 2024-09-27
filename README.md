@@ -83,7 +83,7 @@ trtllm-build --checkpoint_dir $DIR/Checkpoints/Mixtral_8x7B_v0.1_Checkpoint_FP8_
 
 ### 9. To Run Benchmark inside Docker : 
 
-###### USAGE : {RUN_SCRIPT}  {BATCH_SIZE}  {INPUT_LENGTH}  {OUTPUT_LENGTH}  {OUTPUT_FILENAME}
+###### USAGE : {RUN_SCRIPT}  {BATCH_SIZE}  {INPUT_LENGTH}  {OUTPUT_LENGTH} {WARMUP_ITERATIONS} {BENCHMARK_ITERATIONS} {OUTPUT_FILENAME}
 
 ```
 ./run_mixtral_inference.sh 64 2048 2048 25 75 Mixtral_TRT_Batch_64_Input_2048_Output_2048
