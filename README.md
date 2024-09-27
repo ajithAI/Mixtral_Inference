@@ -86,6 +86,8 @@ trtllm-build --checkpoint_dir $DIR/Checkpoints/Mixtral_8x7B_v0.1_Checkpoint_FP8_
 USAGE : {RUN_SCRIPT}  {BATCH_SIZE}  {INPUT_LENGTH}  {OUTPUT_LENGTH} {WARMUP_ITERATIONS} {BENCHMARK_ITERATIONS} {OUTPUT_FILENAME}
 
 ```
+<RUN_SCRIPT> <BATCH_SIZE> <INPUT_LENGTH> <OUTPUT_LENGTH> <WARMUP_ITER> <BENCHMARK_ITER> <OUTPUT_FILENAME>
+
 ./run_mixtral_inference.sh 64 2048 2048 25 75 Mixtral_TRT_Batch_64_Input_2048_Output_2048
 ./run_mixtral_inference.sh 96 2048 128 50 200 Mixtral_TRT_Batch_96_Input_2048_Output_128
 ./run_mixtral_inference.sh 1024 128 128 50 150 Mixtral_TRT_Batch_1024_Input_128_Output_128
