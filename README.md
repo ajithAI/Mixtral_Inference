@@ -1,9 +1,9 @@
 # Mixtral_Inference
 
 ### 1. Prerequisites : 
-> Install Docker & Nvidia Docker. Follow [Link](https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/install-guide.html) </br>
-> Make sure all 8xNvidia H100 GPUs are visible. </br>
-> Check GPUs status with Command : `nvidia-smi`
+- Install Docker & Nvidia Docker. Follow [Link](https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/install-guide.html) </br>
+- Make sure all 8xNvidia H100 GPUs are visible. </br>
+- Check GPUs status with Command : `nvidia-smi`
 
 
 ### 2. Setup TRT-LLM Docker Container : 
