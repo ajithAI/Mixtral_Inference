@@ -23,7 +23,7 @@ pip3 install numpy==1.26.4
 ```
 ### Install TRT-LLM : 
 ```
-git clone https://gitenterprise.xilinx.com/AIG-SAIS/Mixtral_Inference.git
+git clone git clone https://github.com/ajithAI/Mixtral_Inference.git
 cd /home/user/Mixtral_Inference
 git clone --recursive https://github.com/NVIDIA/TensorRT-LLM.git
 pip install typing-extensions
