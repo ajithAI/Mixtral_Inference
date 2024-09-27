@@ -79,26 +79,6 @@ trtllm-build --checkpoint_dir $DIR/Checkpoints/Mixtral_8x7B_v0.1_Checkpoint_FP8_
              --output_dir $DIR/TRT_Engines/Mixtral_8x7B_v0.1_TRT_Engine_FP8_8xGPU_MaxBatch_8192_MaxSeqLen_4096_CUDA_12.6_TRT_LLM_0.13_TP_8 \
              --gemm_plugin auto --use_fp8_context_fmha enable --workers 8 --max_batch_size 8192 --max_input_len 2048 --max_seq_len 4096 
 ```
-   
-
-### Run Sample Inference : 
-```
-export DIR=/home/user/Mixtral_Inference && cd $DIR && mkdir ${DIR}/MIXTRAL_BM_LOGS
-```
-```
-BATCH=64
-ILEN=2048
-OLEN=2048
-WARM=2
-ITER=2
-```
-```
-mpirun -n 8 --allow-run-as-root --bind-to numa --rank-by hwthread --report-bindings python3 ${DIR}/TensorRT-LLM/examples/run_bm.py \ 
-            --run_profiling --tokenizer_dir=/home/user/Mixtral-8x7B-v0.1 --input_file=/home/user/dataset_llama_8192_2048_len.txt \
-            --engine_dir=$DIR/TRT_Engines/Mixtral_8x7B_v0.1_TRT_Engine_FP8_8xGPU_MaxBatch_8192_MaxSeqLen_4096_CUDA_12.6_TRT_LLM_0.13_TP_8  \ 
-            --max_input_length=${ILEN} --max_output_len=${OLEN} --batch=${BATCH} --iterations=${ITER} --warmup=${WARM} \ 
-            2>&1 | tee ${DIR}/MIXTRAL_BM_LOGS/Mixtral_8x7B_v0.1_TRT_Batch_${BATCH}_Input_${ILEN}_Output_{OLEN}_RUN.txt
-```
 
 ### To Run Benchmark inside Docker : 
 
