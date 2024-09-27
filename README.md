@@ -6,8 +6,8 @@
 
 ### Setup : 
 
-###### Replace this with your Work Space Path. 
-###### Minimum Disk Space Required : 300GB
+###### Replace this with your Work Space Path. Minimum Disk Space Required : 300GB
+
 ```
 export HOSTSPACE="/mnt/Scratch_space"  
 ```
