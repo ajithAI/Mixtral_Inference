@@ -4,7 +4,7 @@
 > Install Docker & Nvidia Docker. Follow [Link](https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/install-guide.html) </br>
 > Make sure all 8 GPUs are visible. Check with Command : nvidia-smi 
 
-### Setup : 
+### Setup TRT-LLM Docker Container : 
 
 ###### Replace this with your Work Space Path. Minimum Disk Space Required : 300GB
 
@@ -80,7 +80,7 @@ trtllm-build --checkpoint_dir $DIR/Checkpoints/Mixtral_8x7B_v0.1_Checkpoint_FP8_
 ```
    
 
-### Inference : 
+### Run Sample Inference : 
 ```
 export DIR=/home/user/Mixtral_Inference && cd $DIR && mkdir ${DIR}/MIXTRAL_BM_LOGS
 ```
