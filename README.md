@@ -1,8 +1,8 @@
 # Mixtral_Inference
 
 ### Prerequisites : 
->> Install Docker & Nvidia Docker. Follow [Link](https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/install-guide.html) </br>
->> Make sure all 8 GPUs are visible. Check with Command : nvidia-smi 
+> Install Docker & Nvidia Docker. Follow [Link](https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/install-guide.html) </br>
+> Make sure all 8 GPUs are visible. Check with Command : nvidia-smi 
 
 ### Setup : 
 
