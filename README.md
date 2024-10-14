@@ -35,7 +35,7 @@ pip3 install numpy==1.26.4
 git clone https://github.com/ajithAI/Mixtral_Inference.git
 cd /home/user/Mixtral_Inference
 git clone --recursive https://github.com/NVIDIA/TensorRT-LLM.git
-cd TensorRT-LLM
+#cd TensorRT-LLM
 pip install typing-extensions
 pip install "cython<3"
 pip install "pyyaml==5.4.1" --no-build-isolation
