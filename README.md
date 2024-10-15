@@ -23,6 +23,7 @@ sudo docker run --runtime=nvidia --name=TensorRT_LLM_8xGPU_CUDA_12.6.0 --gpus=al
 ### 3. Install Dependencies ( Inside Docker ) : 
 
 ```
+chmod 1777 /tmp
 apt-get update && apt-get -y install python3.10 python3-pip openmpi-bin libopenmpi-dev git git-lfs vim
 ```
 ```
