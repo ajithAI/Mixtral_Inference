@@ -42,7 +42,7 @@ pip install "cython<3"
 pip install "pyyaml==5.4.1" --no-build-isolation
 pip install -r requirements.txt
 pip install --upgrade transformers
-chmod 777 *.sh 
+cd .. && chmod 777 *.sh
 bash copy.sh 
 ```
 
