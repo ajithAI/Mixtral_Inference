@@ -1,12 +1,13 @@
 run="MaxFreq"
-./docker_run_mixtral_inference.sh 64 2048 2048 25 75 ${run}
-./docker_run_mixtral_inference.sh 96 2048 128 50 200 ${run}
-./docker_run_mixtral_inference.sh 1024 128 128 50 150 ${run}
-./docker_run_mixtral_inference.sh 1024 128 2048 5 25 ${run}
+./docker_run_mixtral_inference.sh 64 2048 2048 25 100 ${run}
+./docker_run_mixtral_inference.sh 96 2048 128 100 400 ${run}
+./docker_run_mixtral_inference.sh 1024 128 128 100 400 ${run}
+./docker_run_mixtral_inference.sh 1024 128 2048 10 50 ${run}
 
-./docker_run_mixtral_inference.sh 64 2048 1 50 200 ${run}
-./docker_run_mixtral_inference.sh 96 2048 1 50 200 ${run}
-./docker_run_mixtral_inference.sh 1024 128 1 50 200 ${run}
+./docker_run_mixtral_inference.sh 64 2048 1 100 250 ${run}
+./docker_run_mixtral_inference.sh 96 2048 1 100 250 ${run}
+./docker_run_mixtral_inference.sh 1024 128 1 100 250 ${run}
+
 
 ./docker_run_mixtral_inference.sh 5120 128 128 15 45 ${run}
 ./docker_run_mixtral_inference.sh 5120 128 2048 2 8 ${run}
