@@ -45,6 +45,9 @@ pip install --upgrade transformers
 cd .. && chmod 777 *.sh
 bash copy.sh 
 ```
+```
+pip3 install tensorrt_llm -U --pre --extra-index-url https://pypi.nvidia.com
+```
 
 ### 5. Check Installation : 
 
