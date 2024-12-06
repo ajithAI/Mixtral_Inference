@@ -82,7 +82,8 @@ export DIR=/home/user/Mixtral_Inference && cd $DIR && mkdir $DIR/TRT_Engines
 ```
 trtllm-build --checkpoint_dir $DIR/Checkpoints/Mixtral_8x7B_v0.1_Checkpoint_FP8_8xGPU_CUDA_12.6_TRT_LLM_0.13 \
              --output_dir $DIR/TRT_Engines/Mixtral_8x7B_v0.1_TRT_Engine_FP8_8xGPU_MaxBatch_8192_MaxSeqLen_4096_CUDA_12.6_TRT_LLM_0.13_TP_8 \
-             --gemm_plugin auto --use_fp8_context_fmha enable --workers 8 --max_batch_size 8192 --max_input_len 2048 --max_seq_len 4096 
+             --gemm_plugin auto --use_paged_context_fmha enable --use_fused_mlp enable --use_fp8_context_fmha enable --workers 8 \
+             --max_batch_size 8192 --max_input_len 2048 --max_seq_len 4096 
 ```
 
 ### 9. To Run Benchmark inside Docker : 
